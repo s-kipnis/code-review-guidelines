@@ -1,18 +1,48 @@
 # code-review-guidelines
 
-### Targets of Code Review
+## Targets of Code Review
 
 - speeding up development
 - improving knowledge distribution
 - making better use of domain experts
 - removing friction
 
-### Should not be targets of Code Review
+## Should not be targets of Code Review
 
 - design review. Design must be determined before coding.
 - error finding. Most of errors should be finded using tests: unit, component and integration.
 
-### Voting 
+## When CL should be approved
+
+Based https://google.github.io/eng-practices/review/reviewer/standard.html
+
+### In general, reviewers should favor approving a CL once it is in a state where it definitely improves the overall code health of the system being worked on, even if the CL isn’t perfect.
+
+*That is the senior principle among all of the code review guidelines.*
+
+## Generic checklist
+
+Based on https://google.github.io/eng-practices/review/
+
+Important
+
+- Functionality: Does the code behave as the author likely intended?
+- **Tests: Does the code have correct and well-designed automated tests?**
+- Naming: Did the developer choose clear names for variables, classes, methods, etc.?
+- Side effects: Any unwanted or unexpected side effects? Critical for us.
+
+Standard
+
+- Design: Is the **code** well-designed?
+- Complexity: Could the code be made simpler?
+- Comments: Are the comments clear and useful?
+
+Optional
+- Style: Does the code follow our style guides? Usually should be done automatically.
+- Documentation: Did the developer also update relevant documentation? Should be part of task.
+
+
+## Voting 
 Based on https://gerrit-review.googlesource.com/Documentation/config-labels.html
 
 **-2 This shall not be merged**
