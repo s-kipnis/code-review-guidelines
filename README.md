@@ -1,5 +1,17 @@
 # code-review-guidelines
 
+### Targets of Code Review
+
+- speeding up development
+- improving knowledge distribution
+- making better use of domain experts
+- removing friction
+
+### Should not be targets of Code Review
+
+- design review. Design must be determined before coding.
+- error finding. Most of errors should be finded using tests: unit, component and integration.
+
 ### Voting 
 Based on https://gerrit-review.googlesource.com/Documentation/config-labels.html
 
